@@ -23,12 +23,12 @@ def print_restaurant_ratings(txtfile):
         add_rest_choice = input("Would you like to add a restuarant? Y or N: ").upper()
 
         if add_rest_choice.startswith("Y"):
-            add_restaurant_name = input("Add a new restaurant: ")
-            add_restaurant_rating = input(f"Add {add_restaurant_name}'s rating: ")
+            user_restaurant_name = input("Add a new restaurant: ")
+            user_restaurant_rating = input(f"Add {user_restaurant_name}'s rating: ")
 
-            restaurant_dict[add_restaurant_name] = add_restaurant_rating
-            print(f"Thank you. {add_restaurant_name}: {add_restaurant_rating} has been added.")
-            print()
+            restaurant_dict[user_restaurant_name] = user_restaurant_rating
+            print(f"Thank you. {user_restaurant_name}: {user_restaurant_rating} has been added.\n")
+
         else:
             print()
             break
